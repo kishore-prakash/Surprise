@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="kishore.surprise" >
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".views.Screen1"
+            android:label="@string/title_activity_screen1"
+            android:screenOrientation="portrait" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+        <activity
+            android:name=".views.Screen2"
+            android:label="@string/title_activity_screen2"
+            android:screenOrientation="portrait" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".views.Screen1" />
+        </activity>
+        <activity
+            android:name=".views.Screen3"
+            android:label="@string/title_activity_screen3"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".views.Screen4"
+            android:label="@string/title_activity_screen4"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".views.Screen5"
+            android:label="@string/title_activity_screen5"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".views.Screen6"
+            android:label="@string/title_activity_screen6"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".views.Screen7"
+            android:label="@string/title_activity_screen7"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".views.Screen8"
+            android:label="@string/title_activity_screen8"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".views.Screen9"
+            android:label="@string/title_activity_screen9"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".views.Screen10"
+            android:label="@string/title_activity_screen10"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".views.Screen11"
+            android:label="@string/title_activity_screen11"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".views.Screen12"
+            android:label="@string/title_activity_screen12"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".views.VideoActivity"
+            android:label="@string/title_activity_video"
+            android:screenOrientation="landscape">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".views.Screen12" />
+        </activity>
+    </application>
+
+</manifest>
